@@ -1,6 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
+    <loc>https://dale426.github.io/blog/2018/js/common/regexp/</loc>
+    <lastmod>2019-07-12</lastmod>
+  </url>  <url>
     <loc>https://dale426.github.io/blog/2017/others/live-tulei-01/</loc>
     <lastmod>2019-07-11</lastmod>
   </url>  <url>
@@ -10,22 +13,22 @@
     <loc>https://dale426.github.io/blog/2019/mobile/h5-dev-summary/</loc>
     <lastmod>2019-07-11</lastmod>
   </url>  <url>
-    <loc>https://dale426.github.io/blog/2017/others/hexo/</loc>
-    <lastmod>2019-07-11</lastmod>
-  </url>  <url>
     <loc>https://dale426.github.io/blog/2019/js/node/commonJS/</loc>
     <lastmod>2019-07-11</lastmod>
   </url>  <url>
     <loc>https://dale426.github.io/blog/2018/js/common/webstorage/</loc>
     <lastmod>2019-07-11</lastmod>
   </url>  <url>
+    <loc>https://dale426.github.io/blog/2017/others/hexo/</loc>
+    <lastmod>2019-07-11</lastmod>
+  </url>  <url>
     <loc>https://dale426.github.io/blog/2017/others/hexo-command/</loc>
     <lastmod>2019-07-11</lastmod>
   </url>  <url>
-    <loc>https://dale426.github.io/blog/2019/js/common/js-fontview/</loc>
+    <loc>https://dale426.github.io/blog/2018/js/common/fiddle001/</loc>
     <lastmod>2019-07-11</lastmod>
   </url>  <url>
-    <loc>https://dale426.github.io/blog/2018/js/common/fiddle001/</loc>
+    <loc>https://dale426.github.io/blog/2019/js/common/js-fontview/</loc>
     <lastmod>2019-07-11</lastmod>
   </url>  <url>
     <loc>https://dale426.github.io/blog/2019/js/common/es6-class/</loc>
@@ -37,13 +40,13 @@
     <loc>https://dale426.github.io/blog/2018/js/common/vuestudy01/</loc>
     <lastmod>2019-07-11</lastmod>
   </url>  <url>
+    <loc>https://dale426.github.io/blog/2017/frame/vue/vue-study-computed/</loc>
+    <lastmod>2019-07-11</lastmod>
+  </url>  <url>
     <loc>https://dale426.github.io/blog/2017/js/array/array-method-01/</loc>
     <lastmod>2019-07-11</lastmod>
   </url>  <url>
     <loc>https://dale426.github.io/blog/2017/js/array/js-call/</loc>
-    <lastmod>2019-07-11</lastmod>
-  </url>  <url>
-    <loc>https://dale426.github.io/blog/2017/frame/vue/vue-study-computed/</loc>
     <lastmod>2019-07-11</lastmod>
   </url>  <url>
     <loc>https://dale426.github.io/blog/2019/frame/vue/vue-components-life/</loc>
@@ -64,16 +67,16 @@
     <loc>https://dale426.github.io/blog/2018/study/study2014-05/</loc>
     <lastmod>2019-07-11</lastmod>
   </url>  <url>
-    <loc>https://dale426.github.io/blog/2018/others/seo/</loc>
-    <lastmod>2019-07-11</lastmod>
-  </url>  <url>
-    <loc>https://dale426.github.io/blog/2018/study/september/</loc>
-    <lastmod>2019-07-11</lastmod>
-  </url>  <url>
     <loc>https://dale426.github.io/blog/2018/study/fontknownageMap/</loc>
     <lastmod>2019-07-11</lastmod>
   </url>  <url>
+    <loc>https://dale426.github.io/blog/2018/others/seo/</loc>
+    <lastmod>2019-07-11</lastmod>
+  </url>  <url>
     <loc>https://dale426.github.io/blog/2017/others/time-manage/</loc>
+    <lastmod>2019-07-11</lastmod>
+  </url>  <url>
+    <loc>https://dale426.github.io/blog/2018/study/september/</loc>
     <lastmod>2019-07-11</lastmod>
   </url>  <url>
     <loc>https://dale426.github.io/blog/2018/others/bat001/</loc>
@@ -82,13 +85,13 @@
     <loc>https://dale426.github.io/blog/2018/js/we_chat/wechat-002/</loc>
     <lastmod>2019-07-11</lastmod>
   </url>  <url>
-    <loc>https://dale426.github.io/blog/2019/others/Excellent-programmer/</loc>
-    <lastmod>2019-07-11</lastmod>
-  </url>  <url>
     <loc>https://dale426.github.io/blog/2018/js/we_chat/wechat-001/</loc>
     <lastmod>2019-07-11</lastmod>
   </url>  <url>
     <loc>https://dale426.github.io/blog/2018/js/we_chat/wechat-003/</loc>
+    <lastmod>2019-07-11</lastmod>
+  </url>  <url>
+    <loc>https://dale426.github.io/blog/2019/others/Excellent-programmer/</loc>
     <lastmod>2019-07-11</lastmod>
   </url>  <url>
     <loc>https://dale426.github.io/blog/2018/js/node/nodestudy-01/</loc>
@@ -100,25 +103,22 @@
     <loc>https://dale426.github.io/blog/2018/js/common/parseUrlParams/</loc>
     <lastmod>2019-07-11</lastmod>
   </url>  <url>
-    <loc>https://dale426.github.io/blog/2018/js/common/regexp/</loc>
-    <lastmod>2019-07-11</lastmod>
-  </url>  <url>
     <loc>https://dale426.github.io/blog/2018/js/common/css%E6%8D%A2%E8%A1%8C%E4%B8%8E%E4%B8%8D%E6%8D%A2%E8%A1%8C/</loc>
-    <lastmod>2019-07-11</lastmod>
-  </url>  <url>
-    <loc>https://dale426.github.io/blog/2017/frame/vue/vue-study-03/</loc>
-    <lastmod>2019-07-11</lastmod>
-  </url>  <url>
-    <loc>https://dale426.github.io/blog/2019/frame/vue/vue-scaffold2/</loc>
     <lastmod>2019-07-11</lastmod>
   </url>  <url>
     <loc>https://dale426.github.io/blog/2019/frame/vue/vue-scaffold/</loc>
     <lastmod>2019-07-11</lastmod>
   </url>  <url>
-    <loc>https://dale426.github.io/blog/2017/frame/vue/vue-study-iview/</loc>
+    <loc>https://dale426.github.io/blog/2019/frame/vue/vue-scaffold2/</loc>
     <lastmod>2019-07-11</lastmod>
   </url>  <url>
     <loc>https://dale426.github.io/blog/2018/frame/vue/vue-ivu-001/</loc>
+    <lastmod>2019-07-11</lastmod>
+  </url>  <url>
+    <loc>https://dale426.github.io/blog/2017/frame/vue/vue-study-03/</loc>
+    <lastmod>2019-07-11</lastmod>
+  </url>  <url>
+    <loc>https://dale426.github.io/blog/2017/frame/vue/vue-study-iview/</loc>
     <lastmod>2019-07-11</lastmod>
   </url>
 </urlset>
