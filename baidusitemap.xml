@@ -4,6 +4,9 @@
     <loc>https://dale426.github.io/blog/2019/js/common/js-fontview/</loc>
     <lastmod>2019-08-01</lastmod>
   </url>  <url>
+    <loc>https://dale426.github.io/blog/2018/js/common/regexp/</loc>
+    <lastmod>2019-08-01</lastmod>
+  </url>  <url>
     <loc>https://dale426.github.io/blog/2018/js/common/css%E6%8D%A2%E8%A1%8C%E4%B8%8E%E4%B8%8D%E6%8D%A2%E8%A1%8C/</loc>
     <lastmod>2019-07-19</lastmod>
   </url>  <url>
@@ -55,9 +58,6 @@
     <loc>https://dale426.github.io/blog/2018/js/common/webstorage/</loc>
     <lastmod>2019-07-15</lastmod>
   </url>  <url>
-    <loc>https://dale426.github.io/blog/2018/js/common/regexp/</loc>
-    <lastmod>2019-07-15</lastmod>
-  </url>  <url>
     <loc>https://dale426.github.io/blog/2019/mobile/h5-dev-summary/</loc>
     <lastmod>2019-07-15</lastmod>
   </url>  <url>
@@ -70,10 +70,10 @@
     <loc>https://dale426.github.io/blog/2018/js/common/remberUrl/</loc>
     <lastmod>2019-07-11</lastmod>
   </url>  <url>
-    <loc>https://dale426.github.io/blog/2018/js/common/vuestudy01/</loc>
+    <loc>https://dale426.github.io/blog/2019/js/common/es6-class/</loc>
     <lastmod>2019-07-11</lastmod>
   </url>  <url>
-    <loc>https://dale426.github.io/blog/2019/js/common/es6-class/</loc>
+    <loc>https://dale426.github.io/blog/2018/js/common/vuestudy01/</loc>
     <lastmod>2019-07-11</lastmod>
   </url>  <url>
     <loc>https://dale426.github.io/blog/2017/frame/vue/vue-study-computed/</loc>
@@ -109,7 +109,7 @@
     <loc>https://dale426.github.io/blog/2018/js/common/parseUrlParams/</loc>
     <lastmod>2019-07-11</lastmod>
   </url>  <url>
-    <loc>https://dale426.github.io/blog/2017/frame/vue/vue-study-iview/</loc>
+    <loc>https://dale426.github.io/blog/2017/frame/vue/vue-study-03/</loc>
     <lastmod>2019-07-11</lastmod>
   </url>  <url>
     <loc>https://dale426.github.io/blog/2018/frame/vue/vue-ivu-001/</loc>
@@ -118,10 +118,10 @@
     <loc>https://dale426.github.io/blog/2019/frame/vue/vue-scaffold/</loc>
     <lastmod>2019-07-11</lastmod>
   </url>  <url>
-    <loc>https://dale426.github.io/blog/2017/frame/vue/vue-study-03/</loc>
+    <loc>https://dale426.github.io/blog/2019/frame/vue/vue-scaffold2/</loc>
     <lastmod>2019-07-11</lastmod>
   </url>  <url>
-    <loc>https://dale426.github.io/blog/2019/frame/vue/vue-scaffold2/</loc>
+    <loc>https://dale426.github.io/blog/2017/frame/vue/vue-study-iview/</loc>
     <lastmod>2019-07-11</lastmod>
   </url>
 </urlset>
