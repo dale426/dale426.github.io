@@ -1,6 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
+    <loc>https://dale426.github.io/blog/2019/js/common/js-fontview/</loc>
+    <lastmod>2019-08-01</lastmod>
+  </url>  <url>
     <loc>https://dale426.github.io/blog/2018/js/common/css%E6%8D%A2%E8%A1%8C%E4%B8%8E%E4%B8%8D%E6%8D%A2%E8%A1%8C/</loc>
     <lastmod>2019-07-19</lastmod>
   </url>  <url>
@@ -53,9 +56,6 @@
     <lastmod>2019-07-15</lastmod>
   </url>  <url>
     <loc>https://dale426.github.io/blog/2018/js/common/regexp/</loc>
-    <lastmod>2019-07-15</lastmod>
-  </url>  <url>
-    <loc>https://dale426.github.io/blog/2019/js/common/js-fontview/</loc>
     <lastmod>2019-07-15</lastmod>
   </url>  <url>
     <loc>https://dale426.github.io/blog/2019/mobile/h5-dev-summary/</loc>
@@ -118,10 +118,10 @@
     <loc>https://dale426.github.io/blog/2019/frame/vue/vue-scaffold/</loc>
     <lastmod>2019-07-11</lastmod>
   </url>  <url>
-    <loc>https://dale426.github.io/blog/2019/frame/vue/vue-scaffold2/</loc>
+    <loc>https://dale426.github.io/blog/2017/frame/vue/vue-study-03/</loc>
     <lastmod>2019-07-11</lastmod>
   </url>  <url>
-    <loc>https://dale426.github.io/blog/2017/frame/vue/vue-study-03/</loc>
+    <loc>https://dale426.github.io/blog/2019/frame/vue/vue-scaffold2/</loc>
     <lastmod>2019-07-11</lastmod>
   </url>
 </urlset>
