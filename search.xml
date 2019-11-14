@@ -4,6 +4,56 @@
   
     
     <entry>
+      <title>时间复杂度&amp;空间复杂度</title>
+      <link href="/blog/2019/js/common/sortbase/"/>
+      <url>/blog/2019/js/common/sortbase/</url>
+      
+        <content type="html"><![CDATA[<p>【基础知识】考量一个算法的维度<br><a id="more"></a></p><h2 id="时间复杂度"><a href="#时间复杂度" class="headerlink" title="时间复杂度"></a>时间复杂度</h2><h3 id="时间频度"><a href="#时间频度" class="headerlink" title="时间频度"></a>时间频度</h3><p>  一个算法执行所耗费的时间。<br>  从理论上讲时间是不能计算出来的，必须上机运行测试才能知道，但我们不可能也没有必要对每个算法都上机运行测试，我们只需要知道哪个算法花费的时间多，哪个算法花费的时间少即可。并且一个算法花费的时间与算法中语句的执行次数成正比，所以一个算法中语句执行的次数多，它花费时间就多。<br>  一个算法中的语句执行次数称为语句频度或时间频度，记为O(n)。</p><h3 id="计算时间复杂度的具体步骤"><a href="#计算时间复杂度的具体步骤" class="headerlink" title="计算时间复杂度的具体步骤"></a>计算时间复杂度的具体步骤</h3><ol><li><p>找出算法中的基本语句<br>  算法中执行次数最多的那条语句就是基本语句，通常是最内层循环的循环体。</p></li><li><p>计算基本语句的执行次数的数量级<br>  只需计算基本语句执行次数的数量级，这就意味着只要保证基本语句执行次数的函数中的最高次幂正确即可，可以忽略所有低次幂和最高次幂的系数。这样能够简化算法分析，并且使注意力集中在最重要的一点上：增长率。</p></li><li><p>用大Ο记号表示算法的时间性能<br>  将基本语句执行次数的数量级放入大Ο记号中。</p></li></ol><blockquote><p>如果算法中包含嵌套的循环，则基本语句通常是最内层的循环体，如果算法中包含并列的循环，则将并列循环的时间复杂度相加;</p></blockquote><h3 id="时间复杂度-1"><a href="#时间复杂度-1" class="headerlink" title="时间复杂度"></a>时间复杂度</h3><p><strong>O(1)</strong><br><figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">int a=<span class="number">2</span>;</span><br><span class="line">int b=<span class="number">2</span>;</span><br><span class="line">int c=<span class="number">2</span>;</span><br></pre></td></tr></table></figure></p><p>  以上三条单个语句的频度均为1，该程序段的执行时间是一个与问题规模n无关的常数。算法的时间复杂度为常数阶，记作T(n)=O(1)。注意：如果算法的执行时间不随着问题规模n的增加而增长，即使算法中有上千条语句，其执行时间也不过是一个较大的常数。此类算法的时间复杂度是O(1)。</p><p><strong>O(n)</strong><br><figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">int i, n = <span class="number">100</span>, sum = <span class="number">0</span>;</span><br><span class="line"><span class="keyword">for</span>( i=<span class="number">0</span>; i &lt; n; i++ )  /执行n+<span class="number">1</span>次/</span><br><span class="line">&#123;</span><br><span class="line">sum = sum + i;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></p><p>  这段代码的时间复杂度为O(n)，因为循环体中的代码需要执行n次。</p><p><strong>O(n*n)</strong><br><figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">int i, j, n = <span class="number">100</span>;</span><br><span class="line"><span class="keyword">for</span>( i=<span class="number">0</span>; i &lt; n; i++ )  /执行n+<span class="number">1</span>次/</span><br><span class="line">&#123;</span><br><span class="line"><span class="keyword">for</span>( j=<span class="number">0</span>; j &lt; n; j++ )    /执行n*(n+<span class="number">1</span>)次/</span><br><span class="line">&#123;</span><br><span class="line">printf(“I love you!”);<span class="regexp">/执行n*n次/</span></span><br><span class="line">&#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></p><p>根据以上代码，n=100，也就是说外层循环每执行一次，内层循环就执行100次，那么程序要运行完两个循环，需要执行100*100次，也就是n的平方，所以这段代码的时间复杂度为O(n*n)。</p><p>  那么问题就来了，要是有三个这样的嵌套循环，时间复杂度就是n*n*n。</p><h3 id="特殊的–-gt-选择排序法"><a href="#特殊的–-gt-选择排序法" class="headerlink" title="特殊的–&gt; 选择排序法"></a>特殊的–&gt; 选择排序法</h3><figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">int i, j, n = <span class="number">100</span>;</span><br><span class="line"><span class="keyword">for</span>( i=<span class="number">0</span>; i &lt; n; i++ )</span><br><span class="line">&#123;</span><br><span class="line"><span class="keyword">for</span>( j=i; j &lt; n; j++ )</span><br><span class="line">&#123;</span><br><span class="line">printf(<span class="string">"选择排序"</span>);</span><br><span class="line">&#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure><p>根据以上代码分析，当i=0时，内循环执行了n次；当i=1时，内循环则执行n-1次……当i=n-1时，内循环执行1次，所以总的执行次数是：<strong>n+(n-1)+(n-2)+…+1 = n(n+1)/2</strong>。用我们推导大O的攻略，第一条忽略，因为没有常数相加。第二条只保留最高项，所以n/2这项去掉。第三条，去除与最高项相乘的常数，最终得时间复杂度为O(n2)。</p><h2 id="空间复杂度"><a href="#空间复杂度" class="headerlink" title="空间复杂度"></a>空间复杂度</h2><p>算法中用到的变量个数</p><p>O(n)</p>]]></content>
+      
+      
+      <categories>
+          
+          <category> JavaScript </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> 算法 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>经典算法-选择排序&amp;冒泡排序</title>
+      <link href="/blog/2019/js/common/sort001/"/>
+      <url>/blog/2019/js/common/sort001/</url>
+      
+        <content type="html"><![CDATA[<p>【重拾算法】: 入门经典算法回顾，冒泡与排序<br><a id="more"></a></p><h3 id="选择排序法"><a href="#选择排序法" class="headerlink" title="选择排序法"></a>选择排序法</h3><p><em>选择排序法</em>是在要排序的一组数中，选出最小（或最大）的一个数与第一个位置的数交换；在剩下的数当中找最小的与第二个位置的数交换，即顺序放在已排好序的数列的最后，如此循环，直到全部数据元素排完为止。<br><figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">var</span> arr = [<span class="number">4</span>, <span class="number">1</span>, <span class="number">6</span>, <span class="number">8</span>, <span class="number">34</span>, <span class="number">23</span>, <span class="number">5</span>, <span class="number">6</span> ,<span class="number">89</span>, <span class="number">28</span>, <span class="number">33</span>]</span><br></pre></td></tr></table></figure></p><figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">function</span> <span class="title">selectSort</span>(<span class="params">sortArr</span>) </span>&#123;</span><br><span class="line">  <span class="keyword">let</span> arr = <span class="built_in">JSON</span>.parse(<span class="built_in">JSON</span>.stringify(sortArr));</span><br><span class="line">  <span class="keyword">let</span> min;</span><br><span class="line">  <span class="keyword">for</span> (<span class="keyword">let</span> i = <span class="number">0</span>, l = arr.length; i &lt; l<span class="number">-1</span>; i++) &#123;</span><br><span class="line">    min = i;</span><br><span class="line">    <span class="comment">// 查找最小的那个数的索引</span></span><br><span class="line">    <span class="keyword">for</span> (<span class="keyword">let</span> k = i + <span class="number">1</span>; k &lt; l; k ++) &#123;</span><br><span class="line">      <span class="keyword">if</span> (arr[i] &gt; arr[k]) &#123;</span><br><span class="line">        min = k;</span><br><span class="line">      &#125;</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="keyword">if</span> (min !== i) &#123;</span><br><span class="line">      <span class="keyword">let</span> temp = arr[i];</span><br><span class="line">      arr[i] = arr[min];</span><br><span class="line">      arr[min] = temp;</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="comment">// 快速交换两个变量 [arr[i], arr[k]] = [arr[k], arr[i]] </span></span><br><span class="line">  &#125;</span><br><span class="line">  <span class="keyword">return</span> arr;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure><p><img src="/public_s/images/arithmetic/select.gif" alt="图片"></p><p>时间复杂度： </p><ul><li>最好的情况下，正序列排列，即min每次是最小的数，只执行了内层的循环 <strong>n-1</strong> 次，时间复杂度为 <strong>O(n)</strong></li><li>最坏的情况下，内层基本语句的执行次数为<strong>n+(n-1)+(n-2)+…+1 = n(n+1)/2</strong>， 所以时间复杂度为O(n*n)</li></ul><p>空间复杂度为: O(1)</p><h3 id="冒泡排序法"><a href="#冒泡排序法" class="headerlink" title="冒泡排序法"></a>冒泡排序法</h3><p>冒泡排序算法的原理如下：</p><ul><li>比较相邻的元素。如果第一个比第二个大，就交换他们两个。</li><li>对每一对相邻元素做同样的工作，从开始第一对到结尾的最后一对。在这一点，最后的元素应该会是最大的数。</li><li>针对所有的元素重复以上的步骤，除了最后一个。</li><li>持续每次对越来越少的元素重复上面的步骤，直到没有任何一对数字需要比较。<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">function</span> <span class="title">bubbleSort</span>(<span class="params">sortArr</span>) </span>&#123;</span><br><span class="line">  <span class="keyword">let</span> arr = <span class="built_in">JSON</span>.parse(<span class="built_in">JSON</span>.stringify(sortArr));</span><br><span class="line">  <span class="keyword">for</span>(<span class="keyword">let</span> i = <span class="number">0</span>; i &lt; arr.length - <span class="number">1</span>; i++) &#123;  <span class="comment">/* 外循环为排序趟数，len个数进行len-1趟 */</span></span><br><span class="line">    <span class="keyword">for</span> (<span class="keyword">let</span> j = <span class="number">0</span>; j &lt; arr.length - i <span class="number">-1</span>; j ++ ) &#123; <span class="comment">/* 内循环为每趟比较的次数，第i趟比较len-i次 */</span></span><br><span class="line">      <span class="keyword">if</span> (arr[j] &gt; arr[j+<span class="number">1</span>]) &#123;</span><br><span class="line">        <span class="keyword">let</span> temp = arr[j];</span><br><span class="line">        arr[j] = arr[j+<span class="number">1</span>];</span><br><span class="line">        arr[j+<span class="number">1</span>] = temp;</span><br><span class="line">      &#125;</span><br><span class="line">    &#125;</span><br><span class="line">  &#125;</span><br><span class="line">  <span class="keyword">return</span> arr;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></li></ul><p><img src="/public_s/images/arithmetic/bubble.gif" alt="图片"></p><p>时间复杂度： </p><ul><li>最好情况下，正序排列，只需要内层循环 <strong>n-1</strong> 趟，所以时间复杂度为 <strong>O(n)</strong></li><li>最坏情况下，需要进行 <strong>n-1</strong> 趟排序。每趟排序要进行 <strong>n-i</strong> 次关键字的比较, 所以内层的基本语句执行次数为 <strong>(n-1)*n / 2</strong>次， 时间复杂度为 <strong>O(n*n)</strong></li></ul><p>空间复杂度：<br><strong>O(1)</strong></p>]]></content>
+      
+      
+      <categories>
+          
+          <category> JavaScript </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> 算法 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>CSS变量</title>
       <link href="/blog/2019/others/caa-var/"/>
       <url>/blog/2019/others/caa-var/</url>
@@ -147,9 +197,9 @@
       
         <tags>
             
-            <tag> vue </tag>
-            
             <tag> ES6 </tag>
+            
+            <tag> vue </tag>
             
         </tags>
       
