@@ -1521,7 +1521,6 @@ pre .javascript .function {
 .posts-expand .post-title {
   overflow-wrap: break-word;
   word-wrap: break-word;
-  text-align: center;
   font-weight: 400;
 }
 .posts-expand .post-title-link {
@@ -1559,7 +1558,6 @@ pre .javascript .function {
   color: #999;
   font-family: 'Lato', "PingFang SC", "Microsoft YaHei", sans-serif;
   font-size: 12px;
-  text-align: center;
 }
 .posts-expand .post-meta .post-category-list {
   display: inline-block;
@@ -1904,7 +1902,7 @@ pre .javascript .function {
   width: 4px;
   height: 4px;
   border-radius: 50%;
-  background: #ffbeeb;
+  background: #06ffe7;
 }
 .feed-link,
 .chat {
@@ -3059,9 +3057,6 @@ ul.breadcrumb li+li:last-child {
 }
 .posts-expand .post-title {
   font-size: 1.7em;
-}
-.post-body > p:first-child {
-  text-align: center;
 }
 .post-body h1 {
   font-size: 1.6em;
